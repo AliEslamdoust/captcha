@@ -6,6 +6,7 @@
 
 .container {
     width: 50%;
+    min-width: 700px;
     padding: 5rem 3rem;
     margin: 50px auto;
     display: flex;
@@ -78,4 +79,33 @@ button {
     height: 200px;
     overflow: hidden;
 
+}
+
+@media (max-width:1366px) {
+    .container {
+        width: 90%;
+        min-width: 90%;
+        padding: 5%;
+    }
+
+    .capContainer {
+        position: relative;
+        width: max-content;
+    }
+
+    button#left {
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        z-index: 999;
+        background-color: white;
+    }
+
+    button#right {
+        position: absolute;
+        right: 0;
+        bottom: 3px;
+        z-index: 999;
+        background-color: white;
+    }
 }
